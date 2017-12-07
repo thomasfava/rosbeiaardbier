@@ -1,0 +1,20 @@
+.section-list {
+  $section-list-gutter: 3rem;
+  $section-list-gutter-half: 1/2 * $section-list-gutter;
+
+  @extend %reset-list;
+
+  margin-right: -$section-list-gutter-half;
+  margin-left: -$section-list-gutter-half;
+
+  @include phablet {
+    display: flex;
+  }
+
+  &__item {
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 50%;
+    margin: 0 $section-list-gutter-half $section-list-gutter;
+  }
+}

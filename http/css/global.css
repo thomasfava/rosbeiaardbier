@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy:400,400i|Source+Sans+Pro");
+.section-list, .division, .social-links, body {
+  margin: 0; }
+
+.section-list, .division, .social-links, body {
+  padding: 0; }
+
+.section-list, .division, .social-links {
+  list-style: none;
+  list-style-type: none;
+  list-style-image: none; }
+
+/*
+// BUTTON COSMETIC MIXIN - It takes 7 aguments (6 optional)
+// 1. The text color
+// 2. The background color (optional)
+// 3. The border color (optional)
+// 4. The text hover color (optional)
+// 5. The background hover color (optional)
+// 6. The border hover color (optional)
+// 7. The rounding value (optional)
+*/
+.page__main:after {
+  content: '';
+  display: block;
+  clear: both; }
+
+.page {
+  max-width: 96rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 3.2rem; }
+  .page:after {
+    content: " ";
+    display: block;
+    clear: both; }
+
+html, .page {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  width: 100%;
+  min-height: 100%; }
+
+.division__title, .division__subtitle, .intro, .social-links__text {
+  word-wrap: normal;
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  width: 1px;
+  overflow: hidden; }
+
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+body {
+  font-family: "Source Sans Pro", "Arial", "Helvetica", "sans-serif";
+  font-size: 1.7rem;
+  line-height: 1.55;
+  color: #f8f8f8; }
+
+*::-moz-selection {
+  background: #eb5855;
+  color: #fff; }
+
+*::selection {
+  background: #eb5855;
+  color: #fff; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.55;
+  margin: 1.8rem 0 1.2rem;
+  font-family: "Sorts Mill Goudy", serif; }
+
+h1 {
+  font-size: 2.8rem;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-column-span: all;
+     -moz-column-span: all;
+          column-span: all; }
+
+h2 {
+  font-size: 2.2rem;
+  -webkit-column-span: all;
+     -moz-column-span: all;
+          column-span: all; }
+
+h3 {
+  font-size: 2rem; }
+
+h4 {
+  font-size: 1.7rem; }
+
+h5 {
+  font-size: 1.4rem; }
+
+h6 {
+  font-size: 1.1rem; }
+
+p {
+  margin: 0 0 1rem;
+  font-weight: 300; }
+
+a {
+  transition: color .2s ease-in-out;
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip: ink;
+  color: #fafafa; }
+  a:hover {
+    color: #fff;
+    cursor: pointer; }
+  a:focus {
+    outline: none; }
+  a img {
+    vertical-align: top; }
+    a img:focus {
+      outline: none; }
+
+b,
+strong {
+  font-weight: 300; }
+
+em {
+  font-style: italic;
+  font-size: 1.4rem; }
+
+ul,
+ol {
+  padding-left: 2rem;
+  margin: 0; }
+
+span.mailto, span.ext {
+  display: none; }
+
+img {
+  border: 0;
+  outline: 0;
+  max-width: 100%;
+  height: auto; }
+
+.page {
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #000;
+  background-image: linear-gradient(183deg, #231f20, #000 70%); }
+  .page__main {
+    padding: 3rem 0 4rem;
+    margin: auto 0; }
+  .page__aside {
+    margin-top: auto; }
+  .page__footer {
+    margin-top: 10px; }
+
+.section-list {
+  margin-right: -1.5rem;
+  margin-left: -1.5rem; }
+  @media (min-width: 30em) {
+    .section-list {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; } }
+  .section-list__item {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -webkit-flex-basis: 50%;
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
+    margin: 0 1.5rem 3rem; }
+
+.copyright {
+  text-align: center;
+  font-family: "Sorts Mill Goudy", serif;
+  font-size: 1.1rem; }
+
+.division {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: center;
+  min-height: 200px; }
+  .division__link {
+    position: relative;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border: 1px solid #cecece;
+    box-shadow: 1px 6px 18px -4px rgba(255, 255, 255, 0.2);
+    transition: border .2s ease-in-out, background-color .2s ease-in-out;
+    text-decoration: none;
+    cursor: pointer; }
+    .division__link:after {
+      transition: opacity .2s ease-in-out;
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      box-shadow: 1px 6px 18px -4px rgba(255, 255, 255, 0.25);
+      opacity: 0; }
+    .division__link:hover {
+      border-color: #fff;
+      background-color: rgba(255, 255, 255, 0.015); }
+      .division__link:hover:after {
+        opacity: 1; }
+  .division__title, .division__subtitle {
+    margin: 0;
+    padding-right: 1.2rem;
+    padding-left: 1.2rem; }
+  .division__title {
+    padding-top: 0.8rem; }
+  .division__subtitle {
+    font-style: italic;
+    font-size: 1.4rem; }
+  .division__image {
+    display: block; }
+
+.intro {
+  margin-bottom: 3rem; }
+
+.multicol {
+  -webkit-column-count: 2;
+     -moz-column-count: 2;
+          column-count: 2;
+  -webkit-column-width: 240px;
+     -moz-column-width: 240px;
+          column-width: 240px;
+  -webkit-column-gap: 3rem;
+     -moz-column-gap: 3rem;
+          column-gap: 3rem; }
+
+.social-links {
+  margin-bottom: 8px;
+  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-grid-column-align: center;
+      justify-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .social-links__item {
+    display: inline-block; }
+    .social-links__item + .social-links__item {
+      margin-left: 14px; }
+  .social-links__link {
+    display: inline-block;
+    width: 2.4rem;
+    height: 2.4rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; }
+    .social-links__link--facebook {
+      background-image: url(../images/icon-facebook.svg); }
+    .social-links__link--untappd {
+      background-image: url(../images/icon-untappd.svg); }
+    .social-links__link--instagram {
+      background-image: url(../images/icon-instagram.svg); }
+    .social-links__link--twitter {
+      background-image: url(../images/icon-twitter.svg); }
+
+/*# sourceMappingURL=global.css.map */
