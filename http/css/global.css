@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy:400,400i|Source+Sans+Pro");
+@import url("https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy:400,400i|Source+Sans+Pro:300,600");
 .section-list, .division, .social-links, body {
   margin: 0; }
 
@@ -59,7 +59,8 @@ body {
   font-family: "Source Sans Pro", "Arial", "Helvetica", "sans-serif";
   font-size: 1.7rem;
   line-height: 1.55;
-  color: #f8f8f8; }
+  color: #f8f8f8;
+  font-weight: 300; }
 
 *::-moz-selection {
   background: #eb5855;
@@ -136,6 +137,9 @@ ul,
 ol {
   padding-left: 2rem;
   margin: 0; }
+  ul li,
+  ol li {
+    font-weight: 300; }
 
 span.mailto, span.ext {
   display: none; }
@@ -273,12 +277,16 @@ img {
     .social-links__item + .social-links__item {
       margin-left: 14px; }
   .social-links__link {
+    transition: opacity .2s ease-in-out;
     display: inline-block;
     width: 2.4rem;
     height: 2.4rem;
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center; }
+    background-position: center;
+    opacity: 0.85; }
+    .social-links__link:hover, .social-links__link:active {
+      opacity: 1; }
     .social-links__link--facebook {
       background-image: url(../images/icon-facebook.svg); }
     .social-links__link--untappd {
