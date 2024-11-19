@@ -7,4 +7,4 @@ Redirect 301 /images/aymon-ros-beiaard-bier-logo-2017.png https://www.aymon.be/i
 Redirect 301 /images/ros-beiaard-bierproevers-logo-woordmerk-negative.png https://www.rosbeiaardbierproevers.be/images/ros-beiaard-bierproevers-logo-words-multi-line-positive.jpg
 Redirect 301 /images/ros-beiaard-bierproevers-default-open-graph.jpg https://www.aymon.be/images/aymon-open-graph-bottle-glass-2020.jpg
 Redirect 301 /images/ros-beiaard-bierproevers-traced-framed.png https://www.rosbeiaardbierproevers.be/images/ros-beiaard-bierproevers-traced-framed.png
-Redirect 301 / https://www.rosbeiaardbierproevers.be/
+Redirect 301 / https://www.aymon.be/
